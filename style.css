@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+   margin: 0px;
+   padding: 0px;
+   font-family: Poppins, sans-serif;
+   
+}
+
+.logo {
+    width: 80px;
+    margin-left: 3rem;
+    margin-top: 20px;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: -5rem;
+}
+
+.dropbtn {
+    background-color: green;
+    font-size: 16px;
+    border: none;
+    display: flex;
+    text-decoration: none;
+    margin-left: 2.9rem;
+    color: white;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Poppins, sans-serif;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
+
+.nav-link {
+    text-decoration: none;
+    margin-left: 1.9rem;
+    padding: .2rem;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    padding-top: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: green;
+}
+
+.navs {
+    margin-top: 10px;
+    height: 150px;
+}
+
+.nav {
+    background-color: black;
+
+}
+
+.hero-img {
+    margin-left: 55rem;
+    margin-top: -3.5rem;
+}
+
+.hero {
+    margin-top: -4rem;
+    margin-left: -.3rem;
+    border: 4px;
+}
+.hero-container {
+    height: 498px;
+    background-color: whitesmoke;
+}
+
+.hero-heading {
+    margin-top: -280px;
+    margin-left: 100px;
+    font-size: 35px;
+}
+
+.hero-btn {
+    margin-left: 100px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: green;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    padding: 20px;
+}
+
+.hero-btn:hover {
+    background-color: black;
+}
