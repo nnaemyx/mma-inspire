@@ -269,3 +269,54 @@ body {
         margin-top: -20px;
     }
 } 
+
+@media (max-width:720px){
+  
+    body {
+        margin: 0;
+        padding: 0;
+    }
+  
+    #menu{
+      display: initial;
+      background-color: #ddd;
+      margin-left: 20rem;
+      margin-top: 10rem;
+    }
+  
+    section .nav-bar{
+      position: absolute;
+      top:30%; 
+      left:0; 
+      right:0;
+      padding-bottom: 9rem;
+      margin-top: -1.9rem;
+      background: #1d2026;
+      flex-direction: column;
+      border-top: .1rem solid rgba(0,0,0,.2);
+      border-bottom: .1rem solid rgba(0,0,0,.2);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+  
+    section .nav-bar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    section .hero-img {
+        display: none;
+    }
+    section .hero-container {
+        margin-top: 34rem;
+        font-size: 17px;
+    }
+    section .nav-bar a{
+      font-size: 1.7rem;
+      display: block;
+      margin-top: -.5rem;
+      text-align:center;
+    }
+  
+    section .dropdown {
+        margin-left: 9rem;
+        margin-top: -20px;
+    }
+} 
