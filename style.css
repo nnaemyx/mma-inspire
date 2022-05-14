@@ -4,6 +4,166 @@ body {
    margin: 0px;
    padding: 0px;
    font-family: Poppins, sans-serif;
-   
 }
 
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  font-family: Poppins, sans-serif;
+}
+
+.dropbtn:hover {
+  background-color: black;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #3e8e41;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: black;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: black;
+  box-shadow: 0 5px 15px rgba(55, 207, 24, 0.2);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.logo {
+  width: 80px;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li{
+  list-style: none;
+  padding: 0px 30px;
+}
+.drop {
+  display: block;
+}
+#navbar li a{
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+
+#hero {
+  background: url(images/hreo-img1.png) no-repeat;
+  height: 90vh;
+  width: 100%;
+  background-position: top 810% right 0%;
+  background-color: white;
+}
+
+.heading {
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 10px;
+}
+
+h1 {
+  color: #3e8e41;
+  padding-bottom: -40px;
+  font-size: 55px;
+  margin-top: 10px;
+}
+h4 {
+  padding-top: -90px;
+  margin-top: 135px;
+  font-size: 24px;
+}
+h2 {
+  font-size: 50px;
+  margin-top: 10px;
+}
+p {
+  font-size: 20px;
+  margin-top: -4px;
+  font-weight: 100;
+}
+h6 {
+  margin-top: -5px;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+#feautre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#feautre .fe-box {
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0,0,0,0.08);
+  border: 2px solid whitesmoke;
+  border-radius: 4px;
+  margin: 15px 0;
+}
+
+#feautre .fe-box:hover {
+  box-shadow: 10px 10px 54px rgba(33, 16, 16, 0.08);
+
+}
+
+#feautre .fe-box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#feautre .fe-box h6{
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  background-color: #3e8e41;
+  color: whitesmoke;
+  font-weight: 200;
+}
