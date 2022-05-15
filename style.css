@@ -58,7 +58,7 @@ body {
   justify-content: space-between;
   padding: 20px 80px;
   background: black;
-  box-shadow: 0 5px 15px rgba(55, 207, 24, 0.2);
+  box-shadow: 0 5px 15px rgba(157, 168, 154, 1);
   z-index: 999;
   position: sticky;
   top: 0;
@@ -80,6 +80,9 @@ body {
 }
 .drop {
   display: block;
+}
+.drop a{
+  text-align: end;
 }
 #navbar li a{
   text-decoration: none;
@@ -104,7 +107,27 @@ body {
   justify-content: center;
   line-height: 10px;
 }
-
+#mobile {
+  display: none;
+  align-items: center;
+}
+#navbar .nav {
+  width: 20px;
+  height: 80px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+#navbar .nav a{
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 100;
+  width: 120px;
+  margin-left: -30px;
+  line-height: 10px;
+  margin-top: 20px;
+}
 h1 {
   color: #3e8e41;
   padding-bottom: -40px;
@@ -166,4 +189,569 @@ h6 {
   background-color: #3e8e41;
   color: whitesmoke;
   font-weight: 200;
+}
+
+
+.product-h4 {
+  margin-top: 20px;
+}
+
+#product1 {
+  text-align: center;
+}
+
+#product1 .pro-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 90px;
+  padding-right: 100px;
+}
+.des {
+  line-height: 2px;
+}
+#product1 .pro {
+  width: 23%;
+  min-width: 250px;
+  padding-left:  5px;
+  padding-right: 20px;
+  padding-top: 10px;
+  border: 1px solid gray;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+}
+#product1 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.3);
+
+}
+#product1 .pro img{
+  width: 263px;
+  height: 319px;
+  border-radius: 20px;
+}
+
+#product1 .pro .des{
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product1 .pro .des span{
+  color: #3e8e41;
+  font-size: 16px;
+}
+
+#product1 .pro .des h5 {
+  padding-top: 7px;
+  color: black;
+  font-size: 18px;
+}
+
+.star{
+  font-size: 12px;
+  color: #3e8e41;
+}
+#product1 .pro .des h4{
+  padding-top: 7px;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+
+#product1 .pro .cart{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  font-size: 29px;
+  color: #3e8e41;
+}
+
+#vary {
+  text-align: center;
+  background-color: whitesmoke;
+}
+#vary .pro-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 90px;
+  padding-right: 100px;
+}
+.des {
+  line-height: 2px;
+}
+#vary .pro {
+  width: 23%;
+  min-width: 250px;
+  padding-left:  5px;
+  padding-right: 20px;
+  padding-top: 10px;
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+}
+
+#range {
+  text-align: center;
+}
+
+#range .pro-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 190px;
+  padding-right: 190px;
+}
+.des {
+  line-height: 2px;
+}
+#range .pro {
+  width: 23%;
+  min-width: 250px;
+  padding-left:  5px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+  border: 1px solid gray;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+}
+#range .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.3);
+
+}
+#range .pro img{
+  width: 263px;
+  height: 319px;
+  border-radius: 20px;
+}
+
+.des1 {
+  line-height: .2px;
+}
+
+.dropbtn1 {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  font-family: Poppins, sans-serif;
+  margin-top: 30px;
+}
+
+.dropbtn1:hover {
+  background-color: black;
+}
+
+.range-p {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 100;
+}
+
+.product-h4 {
+  margin-top: 20px;
+}
+
+#arrivals {
+  text-align: center;
+}
+
+#arrivals .pro-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 90px;
+  padding-right: 100px;
+}
+.des {
+  line-height: 2px;
+}
+#arrivals .pro {
+  width: 23%;
+  min-width: 250px;
+  padding-left:  5px;
+  padding-right: 20px;
+  padding-top: 10px;
+  border: 1px solid gray;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+}
+#arrivals .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.3);
+
+}
+#arrivals .pro img{
+  width: 263px;
+  height: 319px;
+  border-radius: 20px;
+}
+
+#arrivals .pro .des{
+  text-align: start;
+  padding: 10px 0;
+}
+
+#arrivals .pro .des span{
+  color: #3e8e41;
+  font-size: 16px;
+}
+
+#arrivals .pro .des h5 {
+  padding-top: 7px;
+  color: black;
+  font-size: 18px;
+}
+
+.star{
+  font-size: 12px;
+  color: #3e8e41;
+}
+#arrivals .pro .des h4{
+  padding-top: 7px;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+
+#arrivals .pro .cart{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  font-size: 29px;
+  color: #3e8e41;
+}
+
+#newsletter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url("images/feauterd products/b14.png");
+  background-repeat: no-repeat;
+  background-position: 20px 30px;
+  background-color: rgb(2, 2, 36);
+}
+
+.section-m1 {
+  margin-bottom: 30px;
+  line-height: .001px;
+}
+
+#newsletter h4 {
+  font-size: 22px;
+  color: white;
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+#newsletter p {
+  font-size: 14px;
+  color: #3e8e41;
+  font-weight: 300;
+  margin-top: 30px;
+}
+#newsletter input {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#newsletter .form {
+  display: flex;
+  width: 40%;
+}
+#newsletter button {
+  padding: 0px 30px;
+  font-size: 15px;
+  white-space: nowrap;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer h4 {
+  font-size: 19px;
+  padding-bottom: 20px;
+  color: #3e8e41;
+}
+
+footer p {
+  font-size: 15px;
+  margin: 0 0 8px 0;
+  color: white;
+}
+.f1 {
+  margin-top: 30px;
+  margin-bottom: 2px;
+}
+.copy {
+  margin-top: 30px;
+  margin-left: 400px;
+}
+.abo{
+  margin-top: 60px;
+}
+footer a {
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: white;
+}
+.col-payment {
+  margin-top: 90px;
+}
+
+#close {
+  display: none;
+}
+
+/* start media query */
+
+@media (max-width:799px) {
+  .section-p1{
+    padding: 40px 40px;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: black;
+    box-shadow: 0 40px 60px rgb(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transform: 0.3s;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  #navbar.active {
+    right: 0px;
+  }
+
+  #mobile {
+    display: flex;
+  }
+  #mobile i{
+    color: white;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  #lg-bag {
+    display: none;
+  }
+
+  #close {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: white;
+    display: initial;
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+  .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    margin-left: 30px;
+    border: none;
+    font-family: Poppins, sans-serif;
+  }
+  
+  .dropbtn:hover {
+    background-color: black;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3e8e41;
+    min-width: 160px;
+    z-index: 1;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: black;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  #hero {
+    height: 40vh;
+    background-position: top 90% right 0% ;
+    width: 100%;
+    background-size: 330px 440px;
+  }
+
+  #hero .heading {
+    margin-left: 10px;
+  }
+
+  #feautre {
+    justify-content: center;
+  }
+  #feautre .fe-box{
+    margin: 15px 15px;
+  }
+  #product1 .pro-container{
+    justify-content: center;
+  }
+  #product1 .pro{
+    margin: 15px;
+  }
+  #vary .pro-container {
+    
+    justify-content: center;
+  }
+  #arrivals .pro-container {
+    
+    justify-content: center;
+   
+  }
+  #newsletter .form {
+    
+    width: 70%;
+  }
+  #newsletter button {
+    padding: 0px 30px;
+   
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+}
+
+@media (max-width: 477px) {
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #header {
+    padding: 10px 30px;
+  }
+  #hero .heading {
+    margin-left: -80px;
+    line-height: 18px;
+  }
+  #hero {
+    padding: 0 20px;
+    background-size: 120px 140px;
+    background-position: right 30% top 10%;
+    height:260px;
+  }
+  h4 {
+    margin-top: 45px;
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 30px;
+    margin-top: -4px;
+}
+p {
+  font-size: 12px;
+  margin-top: -4px;
+  font-weight: 100;
+}
+
+  h1 {
+    color: #3e8e41;
+    padding-bottom: -40px;
+    font-size: 25px;
+    margin-top: -8px;
+  }
+
+  #feautre {
+    
+    justify-content: center;
+    
+}
+#range .pro-container {
+  
+
+  justify-content: center;
+
+}
+#arrivals .pro-container {
+
+  justify-content: center;
+
+}
+  
 }
