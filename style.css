@@ -561,8 +561,8 @@ footer a {
     justify-content: flex-start;
     position: fixed;
     top: 0;
-    right: -300px;
-    height: 100vh;
+    right: -500px;
+    height: 40vh;
     width: 300px;
     background-color: black;
     box-shadow: 0 40px 60px rgb(0, 0, 0, 0.1);
@@ -578,11 +578,13 @@ footer a {
 
   #mobile {
     display: flex;
+    margin-right: 50px;
   }
   #mobile i{
     color: white;
     font-size: 24px;
     padding-left: 20px;
+    margin-left: 30px;
   }
 
   #lg-bag {
@@ -697,14 +699,16 @@ footer a {
 }
 
 @media (max-width: 477px) {
-
   body {
-    margin: 0;
-    padding: 0;
+    margin-right: 0;
+    padding-right: 0;
   }
-
+  .section-p1 {
+    padding: 20px;
+  }
   #header {
     padding: 10px 30px;
+    width: 100%;
   }
   #hero .heading {
     margin-left: -80px;
@@ -712,9 +716,11 @@ footer a {
   }
   #hero {
     padding: 0 20px;
-    background-size: 120px 140px;
-    background-position: right 30% top 10%;
+    background-size: 220px 240px;
+    background-position: right 20% top 60%;
     height:260px;
+    background-image: none;
+    width: 110%;
   }
   h4 {
     margin-top: 45px;
@@ -740,14 +746,17 @@ p {
   #feautre {
     
     justify-content: center;
-    
-}
-#range .pro-container {
+  }
+  #feautre .fe-box {
+    width: 155px;
+    padding: 0 0 15px 0;
+  }
+  #range .pro-container {
   
 
-  justify-content: center;
+    justify-content: space-between;
 
-}
+  }
 #arrivals .pro-container {
 
   justify-content: center;
