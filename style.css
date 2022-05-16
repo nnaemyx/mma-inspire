@@ -593,7 +593,7 @@ header .navbar a:hover{
 
 /* media queries  */
 
-@media (max-width:991px){
+@media (max-width:1210px){
 
   html{
     font-size: 55%;
@@ -787,7 +787,7 @@ header .navbar a:hover{
 
 }
 
-@media (max-width:620px){
+@media (max-width:635px){
 
   html{
     font-size: 50%;
@@ -811,10 +811,6 @@ header .navbar a:hover{
 
   .dropdown {
     margin-left: 130px;
-  }
-
-  .text {
-    font-size: 20px;
   }
 
   .home .image img {
