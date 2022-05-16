@@ -593,7 +593,7 @@ header .navbar a:hover{
 
 /* media queries  */
 
-@media (max-width:1210px){
+@media (max-width:1034px){
 
   html{
     font-size: 55%;
@@ -668,10 +668,14 @@ header .navbar a:hover{
     margin-top: 50px;
   }
 
+  .home .content p{
+    font-size: 10px;
+  }
+
   .home .image img {
     width: 400px;
     height: 480px;
-    margin-left: 330px;
+    margin-left: 380px;
     margin-top: -310px;
   }
   #feautre {
