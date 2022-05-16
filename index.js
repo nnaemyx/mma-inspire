@@ -1,15 +1,12 @@
-const bar = document.getElementById('bar');
-const close = document.getElementById('close');
-const nav = document.getElementById('navbar');
+let menu = document.querySelector('#menu');
+let navbar = document.querySelector('.navbar');
 
-if (bar) {
-    bar.addEventListener('click', () => {
-        nav.classList.add('active');
-    })
+menu.onclick = () =>{
+  menu.classList.toggle('fa-times');
+  navbar.classList.toggle('active');
 }
 
-if (close) {
-    close.addEventListener('click', () => {
-        nav.classList.remove('active');
-    })
+window.onscroll = () =>{
+  menu.classList.remove('fa-times');
+  navbar.classList.remove('active');
 }
