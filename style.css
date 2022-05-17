@@ -81,8 +81,9 @@ header{
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-top: -15px;
+  margin-top: -35px;
   padding:2rem 7%;
+  margin-left: -90px;
   border-bottom: .1rem solid rgba(0,0,0,.1);
   position: fixed;
   z-index: 1000;
@@ -92,7 +93,6 @@ header{
 header .logo{
   width: 80px;
 }
-
 header .navbar a{
   margin-left: 2rem;
   font-size: 15px;
@@ -157,7 +157,7 @@ header .navbar a:hover{
 }
 .icon {
   padding: 10px;
-  display: none;
+  display: flex;
 }
 .home{
   display: flex;
@@ -587,6 +587,7 @@ header .navbar a:hover{
 
   header{
     padding:2rem;
+    margin-left: .1px;
   }
 
   section{
