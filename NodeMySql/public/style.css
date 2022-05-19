@@ -34,17 +34,8 @@ html::-webkit-scrollbar-thumb{
   border-radius: 5rem;
 }
 
-.logo-span {
-    color: #04AA6D;
-    font-size: 20px;
-}
-header h4{
-    font-size: 20px;
-    color: white;
-}
-
-
 body{
+  background:var(--gradient);
   padding:3rem 7%;
 }
 
