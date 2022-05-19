@@ -2,7 +2,7 @@
 
 :root{
   --violet:#333;
-  --pink:#04AA6D;
+  --pink:#333;
   --gradient:linear-gradient(90deg, var(--violet), var(--pink));
 }
 
@@ -311,6 +311,8 @@ span {
   padding-right: .4rem;
   color:var(--pink);
 }
+
+
 
 .teacher{
   display: flex;
