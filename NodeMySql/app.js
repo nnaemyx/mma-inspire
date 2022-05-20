@@ -3,7 +3,7 @@ const path = require("path");
 const mysql = require("mysql");
 const app = express();
 const dotenv = require("dotenv");
-const morgan =          require('morgan')
+const morgan = require('morgan');
 
 dotenv.config({ path: './.env' });
 
@@ -11,19 +11,21 @@ dotenv.config({ path: './.env' });
 // middle wares
 app.use(morgan('dev'))
 
- const db = mysql.createConnection ({
-     host: process.env.DATABASE_HOST,
-     user: process.env.DATABASE_USER,
-     password: process.env.DATABASE_PASSWORD,
-     database: process.env.DATABASE
+const db = mysql.createConnection ({
+    host: process.env.DATABASE_HOST,
+    user: process.env.DATABASE_USER,
+    password: process.env.DATABASE_PASSWORD,
+    database: process.env.DATABASE
 });
 
-const publicDirectory = path.join(__dirname, './public', '../..' );
-app.use(express.static(publicDirectory));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'css')));
+app.use(express.static(path.join(__dirname, 'src')));
+app.use(express.static(path.join(__dirname, 'script')));
 
 app.set('view engine', 'ejs');
- app.set('views', './view');
- db.connect( (error) => {
+app.set('views', './views');
+db.connect( (error) => {
     if(error) {
         console.log(error)
      }else {
@@ -32,19 +34,29 @@ app.set('view engine', 'ejs');
 })
 app.get('/', (req, res) => {
 //    res.send("<h1>homepage</h1>")
-   res.render('index');
+   res.render("index");
+});
+
+app.get('/style', (req, res) => {
+    //    res.send("<h1>homepage</h1>")
+       res.render("style.css");
 });
 
 app.get('/login', (req, res) => {
     // res.send("<h1>homepage</h1>")
     res.render('login');
- });
+});
 
 
- app.get('/register', (req, res) => {
+app.get('/register', (req, res) => {
     // res.send("<h1>homepage</h1>")
     res.render('register');
- });
+});
+
+app.get('/script', (req, res) => {
+    // res.send("<h1>homepage</h1>")
+    res.render("script.js");
+});
 
 app.listen(5000, () =>{
     console.log("server");
